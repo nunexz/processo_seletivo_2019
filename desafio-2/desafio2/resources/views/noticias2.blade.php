@@ -16,11 +16,11 @@
 
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="{{ asset('favicon.png') }}">
+    <link rel="shortcut icon" href="../assets/favicon.png">
 
 
     <!-- CSS -->
-    <link href="{{ asset('css/geral.css') }}" rel="stylesheet" type="text/css" >
+    <link rel="stylesheet" href="../../public/css/geral.css">
 
     <!--[if (gte IE 6)&(lte IE 8)]>
     <script type="text/javascript" src="selectivizr.js"></script>
@@ -45,7 +45,7 @@
 
                 <form class="form-group row" method="get" action={{url('/')}}>
                     <div class="col-12 busca">
-                        <input type="text"  class="form-control col-8" placeholder="Digite sua busca" name="filtro">
+                        <input type="text"  class="form-control col-8" placeholder="Digite sua busca">
                         <button class="btn btn-primary col-2"> Buscar </button>
                     </div>
 
@@ -60,7 +60,7 @@
                             <div class="texto-lista-noticias">
                                 <span class="data-lista-noticia">{{$noticia->data_formatada}}</span>
                                 <h1>{{$noticia->titulo}}</h1>
-                                <p>{{$noticia->texto}}</p>
+                                <p>{{$noticia->text}}</p>
                             </div>
                         </a>
                     </article><!--Fim Notícia-->
